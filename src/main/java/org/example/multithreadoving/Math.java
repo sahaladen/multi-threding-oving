@@ -1,23 +1,21 @@
 package org.example.multithreadoving;
 
 public class Math extends Thread{
-    private int number1;
-    private int number2;
+    private int sum;
 
-    public Math(int number1, int number2) {
-        this.number1 = number1;
-        this.number2 = number2;
+
+    public Math(int sum) {
+        this.sum = sum;
+
     }
 
     public void run(){
-        System.out.println(number1 + " and " + number2 + " is being calculated and running on: " + Thread.currentThread().getName());
+        System.out.println(sum +  " has been calculated and running on: " + Thread.currentThread().getName());
     }
 
-    public int getNumber1() {
-        return number1;
+    public int getSum() {
+        return sum;
     }
 
-    public int getNumber2() {
-        return number2;
-    }
+
 }

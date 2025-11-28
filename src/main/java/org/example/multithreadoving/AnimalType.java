@@ -8,6 +8,6 @@ public class AnimalType extends Thread{
     }
 
     public void run(){
-        System.out.println(name + " is the animal type and is running on " + Thread.currentThread().getName());
+        System.out.println(name + " is the animal type and is running on: " + Thread.currentThread().getName());
     }
 }
